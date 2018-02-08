@@ -14,6 +14,8 @@ end
 group :test, :development do
   # testing farmework for Ruby
   gem 'rspec'
+  # RSpec extension gem for attribute matching
+  gem 'rspec-its', '1.2.0'
   # Combine pry with byebug
   gem 'pry-byebug'
   # Ruby static code analyzer
