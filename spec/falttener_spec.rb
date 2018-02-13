@@ -19,8 +19,8 @@ RSpec.describe Flattener do
     end
 
     context "when invalid param is passed" do
+      let(:invalid_flattener_with_string) { Flattener.new("somthing") }	
       it "returns false for non array param" do
-        let(:invalid_flattener_with_string) { Flattener.new("somthing") }
         expect(invalid_flattener_with_string.valid?).to be false
       end
 
